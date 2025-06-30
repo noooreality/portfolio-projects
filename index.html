@@ -5,56 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Meine Portfolio-Projekte</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 700px;
+      font-family: 'Poppins', sans-serif;
+      max-width: 720px;
       margin: 3rem auto;
-      padding: 0 1rem;
-      background-color: #fafafa;
-      color: #222;
+      padding: 0 1rem 4rem;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #1f2937;
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 2.5rem;
       font-weight: 700;
-      font-size: 2.4rem;
-      color: #004e89;
-      letter-spacing: 1px;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      background: linear-gradient(90deg, #0ea5e9, #3b82f6, #0ea5e9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      user-select: none;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
     }
 
     ul {
       list-style: none;
       padding-left: 0;
       margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
     }
 
     li {
-      background: #fff;
-      margin: 0.7rem 0;
-      padding: 1rem 1.2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgb(0 0 0 / 0.07);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(59,130,246,0.15);
+      padding: 1.2rem 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
     }
 
     li:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgb(0 0 0 / 0.12);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(59,130,246,0.35);
+    }
+
+    li:focus-within {
+      outline: 3px solid #3b82f6;
+      outline-offset: 3px;
+    }
+
+    .icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      fill: #3b82f6;
+      transition: fill 0.3s ease;
+    }
+
+    li:hover .icon {
+      fill: #0ea5e9;
     }
 
     a {
-      text-decoration: none;
-      color: #007acc;
+      color: #1e40af;
       font-weight: 600;
-      font-size: 1.1rem;
-      display: block;
+      font-size: 1.15rem;
+      text-decoration: none;
+      flex-grow: 1;
+      transition: color 0.3s ease;
+      user-select: text;
     }
 
     a:hover,
     a:focus {
+      color: #2563eb;
       text-decoration: underline;
-      color: #005ea3;
       outline: none;
     }
   </style>
@@ -62,32 +94,190 @@
 <body>
   <h1>Meine Portfolio-Projekte</h1>
   <ul>
-    <li><a href="https://noooreality.github.io/portfolio-projects/a-book-catalog-table/index.html" target="_blank" rel="noopener">Buch-Katalog Tabelle</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/a-travel-agency-page/index.html" target="_blank" rel="noopener">Reiseagentur Webseite</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/a-video-compilation-page/index.html" target="_blank" rel="noopener">Video-Zusammenstellung</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-book-inventory-app/index.html" target="_blank" rel="noopener">Buch-Inventar App</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-checkout-page/index.html" target="_blank" rel="noopener">Checkout-Seite</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-confidential-email-page/index.html" target="_blank" rel="noopener">Vertrauliche E-Mail Seite</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-house-painting/index.html" target="_blank" rel="noopener">Hausanstrich Projekt</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-moon-orbit/index.html" target="_blank" rel="noopener">Mond-Orbit Animation</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-newspaper-article/index.html" target="_blank" rel="noopener">Zeitungsartikel Layout</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-page-of-playing-cards/index.html" target="_blank" rel="noopener">Spielkarten Seite</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-recipe-page/index.html" target="_blank" rel="noopener">Rezeptseite</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-a-stylized-to-do-list/index.html" target="_blank" rel="noopener">Stilisierte To-Do Liste</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-an-availability-table/index.html" target="_blank" rel="noopener">Verfügbarkeits-Tabelle</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/build-an-event-flyer-page/index.html" target="_blank" rel="noopener">Event-Flyer Seite</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/css-color-markers/index.html" target="_blank" rel="noopener">CSS Farbmarker</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/design_a_registration_form/index.html" target="_blank" rel="noopener">Registrierungsformular Design</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/design_piano/index.html" target="_blank" rel="noopener">Klavier Design</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/design-a-business-card/index.html" target="_blank" rel="noopener">Visitenkartendesign</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/design-a-contact-form/index.html" target="_blank" rel="noopener">Kontaktformular Design</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/design-a-magazine-layout/index.html" target="_blank" rel="noopener">Magazin Layout</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/greeting-card/index.html" target="_blank" rel="noopener">Grußkarte</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/lab-blog-post-card/index.html" target="_blank" rel="noopener">Blog-Beitragskarte</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/lab-event-hub/index.html" target="_blank" rel="noopener">Event Hub</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/lab-job-application-form/index.html" target="_blank" rel="noopener">Bewerbungsformular</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/lab-multimedia-player/index.html" target="_blank" rel="noopener">Multimedia Player</a></li>
-    <li><a href="https://noooreality.github.io/portfolio-projects/set-of-colored-boxes/index.html" target="_blank" rel="noopener">Farbige Boxen</a></li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 2h9a2 2 0 012 2v2H6V2zM4 6v14a2 2 0 002 2h12a2 2 0 002-2V6H4z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/a-book-catalog-table/index.html" target="_blank" rel="noopener">Buch-Katalog Tabelle</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5v-5l-10 5-10-5v5z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/a-travel-agency-page/index.html" target="_blank" rel="noopener">Reiseagentur Webseite</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 3v18l15-9L5 3z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/a-video-compilation-page/index.html" target="_blank" rel="noopener">Video-Zusammenstellung</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 4h16v2H4zM4 8h16v12H4z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-book-inventory-app/index.html" target="_blank" rel="noopener">Buch-Inventar App</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 4h10v2H7zM7 8h10v12H7z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-checkout-page/index.html" target="_blank" rel="noopener">Checkout-Seite</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 3h20v4H2V3zm2 8h16v10H4V11z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-confidential-email-page/index.html" target="_blank" rel="noopener">Vertrauliche E-Mail Seite</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 21h18v-2H3v2zm2-12h14v7H5v-7zM12 2L2 8v2h20V8l-10-6z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-house-painting/index.html" target="_blank" rel="noopener">Hausanstrich Projekt</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke-width="2" stroke="#3b82f6" fill="none"/>
+        <circle cx="12" cy="12" r="4" fill="#0ea5e9"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-moon-orbit/index.html" target="_blank" rel="noopener">Mond-Orbit Animation</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="5" rx="1" ry="1"/>
+        <rect x="3" y="11" width="18" height="9" rx="1" ry="1"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-newspaper-article/index.html" target="_blank" rel="noopener">Zeitungsartikel Layout</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="2" y="5" width="20" height="14" rx="2" ry="2"/>
+        <circle cx="8" cy="12" r="1.5"/>
+        <circle cx="12" cy="12" r="1.5"/>
+        <circle cx="16" cy="12" r="1.5"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-page-of-playing-cards/index.html" target="_blank" rel="noopener">Spielkarten Seite</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 4h16v16H4z"/>
+        <path d="M7 8h10v2H7zM7 12h10v2H7z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-recipe-page/index.html" target="_blank" rel="noopener">Rezeptseite</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="2" ry="2"/>
+        <path d="M7 8h10v2H7zM7 12h10v2H7z"/>
+        <circle cx="8" cy="17" r="1"/>
+        <circle cx="16" cy="17" r="1"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-a-stylized-to-do-list/index.html" target="_blank" rel="noopener">Stilisierte To-Do Liste</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="2" y="6" width="20" height="12" rx="2" ry="2"/>
+        <path d="M6 10h12v4H6z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-an-availability-table/index.html" target="_blank" rel="noopener">Verfügbarkeits-Tabelle</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="16" rx="2" ry="2"/>
+        <circle cx="7" cy="10" r="2"/>
+        <circle cx="17" cy="10" r="2"/>
+        <rect x="7" y="14" width="10" height="4" rx="1" ry="1"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/build-an-event-flyer-page/index.html" target="_blank" rel="noopener">Event-Flyer Seite</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/>
+        <circle cx="12" cy="12" r="5" fill="white"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/css-color-markers/index.html" target="_blank" rel="noopener">CSS Farbmarker</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="16" rx="2" ry="2"/>
+        <path d="M7 8h10v2H7zM7 12h6v2H7z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/design_a_registration_form/index.html" target="_blank" rel="noopener">Registrierungsformular Design</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="2" y="7" width="20" height="10" rx="2" ry="2"/>
+        <rect x="8" y="11" width="8" height="4" rx="1" ry="1" fill="#0ea5e9"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/design_piano/index.html" target="_blank" rel="noopener">Klavier Design</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="4" y="6" width="16" height="12" rx="3" ry="3"/>
+        <line x1="8" y1="10" x2="16" y2="10" stroke-width="2" stroke="#3b82f6" />
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/design-a-business-card/index.html" target="_blank" rel="noopener">Visitenkartendesign</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="16" rx="3" ry="3"/>
+        <path d="M7 10h10v2H7z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/design-a-contact-form/index.html" target="_blank" rel="noopener">Kontaktformular Design</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="2" y="3" width="20" height="18" rx="3" ry="3"/>
+        <line x1="6" y1="7" x2="18" y2="7" stroke-width="2" stroke="#3b82f6" />
+        <line x1="6" y1="11" x2="18" y2="11" stroke-width="2" stroke="#3b82f6" />
+        <line x1="6" y1="15" x2="18" y2="15" stroke-width="2" stroke="#3b82f6" />
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/design-a-magazine-layout/index.html" target="_blank" rel="noopener">Magazin Layout</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="7" width="18" height="10" rx="5" ry="5"/>
+        <path d="M8 10h8v4H8z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/greeting-card/index.html" target="_blank" rel="noopener">Grußkarte</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="4" y="5" width="16" height="14" rx="3" ry="3"/>
+        <line x1="8" y1="9" x2="16" y2="9" stroke-width="2" stroke="#3b82f6" />
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/lab-blog-post-card/index.html" target="_blank" rel="noopener">Blog-Beitragskarte</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <path d="M12 6v6l4 2"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/lab-event-hub/index.html" target="_blank" rel="noopener">Event Hub</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="4" y="5" width="16" height="14" rx="3" ry="3"/>
+        <path d="M8 9h8v6H8z"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/lab-job-application-form/index.html" target="_blank" rel="noopener">Bewerbungsformular</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="6" width="18" height="12" rx="2" ry="2"/>
+        <circle cx="8" cy="12" r="2"/>
+        <rect x="12" y="10" width="6" height="4" rx="1" ry="1"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/lab-multimedia-player/index.html" target="_blank" rel="noopener">Multimedia Player</a>
+    </li>
+    <li tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="2" y="5" width="20" height="14" rx="4" ry="4" fill="#3b82f6" />
+        <rect x="4" y="7" width="16" height="10" rx="2" ry="2" fill="white"/>
+      </svg>
+      <a href="https://noooreality.github.io/portfolio-projects/set-of-colored-boxes/index.html" target="_blank" rel="noopener">Farbige Boxen</a>
+    </li>
   </ul>
 </body>
 </html>
