@@ -1,0 +1,163 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at center, #000025 0%, #000000 100%);
+}
+
+.space {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.earth {
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background: radial-gradient(circle at 30% 30%, #3fa9f5, #0b3d91);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden; 
+}
+
+.continent {
+  position: absolute;
+  background: linear-gradient(135deg, #2e8b57, #8b5e3c);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.continent1 {
+  width: 55%;
+  height: 35%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+.continent2 {
+  width: 30%;
+  height: 25%;
+  top: 20%;
+  left: 65%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+}
+
+.orbit {
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  animation: orbit 5s linear infinite;
+}
+
+.moon {
+  border-radius: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background: radial-gradient(circle at 30% 30%, #ddd, #aaa);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.crater {
+  position: absolute;
+  background: #999;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.crater1 {
+  width: 33%;
+  height: 33%;
+  top: 16%;
+  left: 10%;
+}
+
+.crater2 {
+  width: 20%;
+  height: 20%;
+  top: 23%;
+  left: 67%;
+}
+
+.crater3 {
+  width: 27%;
+  height: 27%;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .space {
+    height: 150px;
+    width: 150px;
+  }
+  .earth {
+    height: 70px;
+    width: 70px;
+  }
+  .orbit {
+    height: 150px;
+    width: 150px;
+  }
+  .moon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .space {
+    height: 180px;
+    width: 180px;
+  }
+  .earth {
+    height: 90px;
+    width: 90px;
+  }
+  .orbit {
+    height: 180px;
+    width: 180px;
+  }
+  .moon {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .space {
+    height: 350px;
+    width: 350px;
+  }
+  .earth {
+    height: 180px;
+    width: 180px;
+  }
+  .orbit {
+    height: 350px;
+    width: 350px;
+  }
+  .moon {
+    height: 50px;
+    width: 50px;
+  }
+}
