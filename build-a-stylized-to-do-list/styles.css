@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list > li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.todo-list > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.todo-list input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-list label {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sub-item {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+/* Плавное открытие подсписка если чекбокс отмечен */
+.todo-list input[type="checkbox"]:checked ~ .sub-item {
+  max-height: 100px; /* Достаточно для одной ссылки */
+}
+
+.sub-item-link {
+  color: black;
+  text-decoration: none;
+}
+
+.sub-item-link:hover {
+  color: brown;
+  text-decoration: underline;
+}
+
+.sub-item-link:visited {
+  color: black;
+}
+
+.sub-item-link:active {
+  color: brown;
+}
+
+.sub-item-link:focus {
+  outline: 2px solid brown;
+  outline-offset: 2px;
+}
