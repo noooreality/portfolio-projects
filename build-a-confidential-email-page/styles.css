@@ -1,0 +1,43 @@
+#email{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-color: #e5decf;
+  box-shadow: 10px 5px 5px dimgrey;
+}
+.paragraph{
+  margin-top: 75px;
+  margin-bottom: 80px;
+}
+#confidential{
+  position: absolute;
+  z-index: 999;
+  font-weight: bold;
+  color: rgba(250,0,0,0.7);
+  display: inline-block;
+  padding: 10px;
+  margin-left: 100px;
+  border: 5px solid rgba(250,0,0,0.7);
+  transform: rotate(-0.05turn);
+  font-size: 1.6rem;
+}
+#top-secret{
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+  color: rgba(250,0,0,0.7);
+  display: inline-block;
+  padding: 10px;
+  margin-left: 200px;
+  margin-top: 315px;
+  border: 5px solid rgba(250,0,0,0.7);
+  transform: rotate(0.05turn);
+  font-size: 1.2rem;
+}
+.blurred{
+  filter: blur(3px);
+}
