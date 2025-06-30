@@ -1,0 +1,23 @@
+body{
+  background-color: #f4f4f4;
+}
+.color-box{
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+}
+.color1{
+  background-color: #FF5733;
+}
+.color2{
+  background-color: rgb(51, 233, 255);
+}
+.color3{
+  background-color: gold;
+}
+.color4{
+  background-color: hsl(257, 80%, 60%);
+}
+.color5{
+  background-color: pink ;
+}
